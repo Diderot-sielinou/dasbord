@@ -1,11 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/responsive.css">
+  <title>dashbord</title>
 </head>
+
 <body>
-  
+  <div class="dashbord-container">
+    <div class="main-sidebar">
+      <div class="aside-header">
+        <div class="brand">
+          <img src="images/t1.avif" alt="logo">
+          <h3>fonouCMP</h3>
+        </div>
+        <div class="close" id="close-sidebar">
+          <span class="material-icons-sharp">
+            close
+          </span>
+        </div>
+      </div>
+      <div class="siderbar">
+        <ul class="list-items">
+          <!-- item -->
+          <li class="item">
+            <a href="#">
+              <span class="material-icons-sharp">
+                dashboard
+              </span>
+              <span>tableau de bord</span>
+            </a>
+          </li>
+          <!-- item -->
+          <li class="item">
+            <a href="#">
+              <span class="material-icons-sharp">
+                people
+              </span>
+              <span>clients</span>
+            </a>
+          </li>
+          <!-- item -->
+          <li class="item">
+            <a href="#">
+              <span class="material-icons-sharp">
+                shopping_cart
+              </span>
+              <span>commandes</span>
+            </a>
+          </li>
+          <!-- item -->
+          <li class="item">
+            <a href="#">
+              <span class="material-icons-sharp">
+                insights
+              </span>
+              <span>statistique</span>
+            </a>
+          </li> <!-- item message -->
+          <li class="item">
+            <a href="#">
+              <span class="material-icons-sharp">
+                textsms
+              </span>
+              <span>Messagerie</span>
+              <sapn class="message-count">22</sapn>
+            </a>
+          </li>
+          <!-- item  -->
+          <li class="item">
+            <a href="#">
+              <span class="material-icons-sharp">
+                dashboard
+              </span>
+              <span>tableau de bord</span>
+            </a>
+          </li>
+          <!-- item -->
+          <li class="item">
+            <a href="#">
+              <span class="material-icons-sharp">
+                dashboard
+              </span>
+              <span>tableau de bord</span>
+            </a>
+          </li> <!-- item -->
+          <li class="item">
+            <a href="#">
+              <span class="material-icons-sharp">
+                dashboard
+              </span>
+              <span>tableau de bord</span>
+            </a>
+          </li>
+          </li> <!-- item -->
+          <li class="item">
+            <a href="#">
+              <span class="material-icons-sharp">
+                logout
+              </span>
+              <span>deconnection</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-container">
+      <h1 class="main-title">dashbord</h1>
+      <!-- card -->
+      <div class="insights">
+        <!-- card 1 -->
+        <div class="card">
+          <div class="card-container">
+            <div class="card-header">
+              <span class="material-icons-sharp">
+                bar_chart
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-info">
+                <h3>ventes totals</h3>
+                <h1>2.03M</h1>
+              </div>
+              <div class="card-progress">
+                <svg width="96" height="96" class="stroke-yellow">
+                  <circle id="circle1" cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="percentage">
+                  <p>17%</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small>sur les 48H precedentes</small>
+            </div>
+          </div>
+        </div> <!-- card 2 -->
+        <div class="card">
+          <div class="card-container">
+            <div class="card-header">
+              <span class="material-icons-sharp">
+                bar_chart
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-info">
+                <h3>ventes totals</h3>
+                <h1>2.03M</h1>
+              </div>
+              <div class="card-progress">
+                <svg width="96" height="96" class="stroke-fuscha">
+                  <circle id="circle2" cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="percentage">
+                  <p>59%</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small>sur les 48H precedentes</small>
+            </div>
+          </div>
+        </div> <!-- card 3 -->
+        <div class="card">
+          <div class="card-container">
+            <div class="card-header">
+              <span class="material-icons-sharp">
+                bar_chart
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-info">
+                <h3>ventes totals</h3>
+                <h1>2.03M</h1>
+              </div>
+              <div class="card-progress">
+                <svg width="96" height="96" class="stroke-cyan">
+                  <circle id="circle3" cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="percentage">
+                  <p>47%</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small>sur les 48H precedentes</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- recent orders -->
+      <section class="recent-order">
+        <div class="ro-title">
+          <h2 class="recent-orders-title">commandes recentes</h2>
+          <a href="#" class="show all">tout afficher</a>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>product</th>
+              <th>serie</th>
+              <th>accc</th>
+              <th>acW</th>
+              <th>DQCVVWEv</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12</td>
+              <td>pc</td>
+              <td>cdcadsd</td>
+              <td>doit</td>
+              <td class="text-fuscha">nonn payee</td>
+              <td>3 jours restants</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>pc</td>
+              <td>cdcadsd</td>
+              <td>doit</td>
+              <td class="text-fuscha">nonn payee</td>
+              <td>3 jours restants</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>pc</td>
+              <td>cdcadsd</td>
+              <td>doit</td>
+              <td class="text-fuscha">nonn payee</td>
+              <td>3 jours restants</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>pc</td>
+              <td>cdcadsd</td>
+              <td>doit</td>
+              <td class="text-fuscha">nonn payee</td>
+              <td>3 jours restants</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <!-- extra bar -->
+    <div class="extrabar">
+      <header class="header-rigth">
+        <button class="toggle-menu-btn" id="opensidebar">
+          <span class="material-icons-sharp">
+            menu
+          </span>
+        </button>
+        <div class="toggle-them">
+          <span class="material-icons-sharp active">
+            light_mode
+          </span>
+          <span class="material-icons-sharp">
+            dark_mode
+          </span>
+        </div>
+
+        <div class="profile">
+          <div class="profile-info">
+            <p>salut, <strong>coding</strong></p>
+            <small>admin</small>
+          </div>
+          <div class="profile-img">
+            <img src="images/t2.avif" alt="users image">
+          </div>
+        </div>
+      </header>
+      <div class="recent-update">
+        <h2>infos recentes</h2>
+        <div class="update-container">
+          <div class="update">
+            <div class="profile-img">
+              <img src="images/t3.avif" alt="">
+            </div>
+            <div class="message">
+              <p><strong>arthur</strong> Lorem ipsum, dolor sit am Eaque, sapiente soluta? Quasi. </p>
+            </div>
+          </div>
+          <div class="update">
+            <div class="profile-img">
+              <img src="images/t3.avif" alt="">
+            </div>
+            <div class="message">
+              <p><strong>arthur</strong> Lorem ipsum, dolor sit am Eaque, sapiente soluta? Quasi. </p>
+            </div>
+          </div>
+          <div class="update">
+            <div class="profile-img">
+              <img src="images/t3.avif" alt="">
+            </div>
+            <div class="message">
+              <p><strong>arthur</strong> Lorem ipsum, dolor sit am Eaque, sapiente soluta? Quasi. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="analytics">
+        <h2>Lorem, ipsum.</h2>
+        <div class="order">
+          <div class="order-icon">
+            <span class="material-icons-sharp">
+              shopping_cart
+            </span>
+          </div>
+          <div class="order-details">
+            <div class="info">
+              <h3>COMMMANDE DIRECT</h3>
+              <small>48h precedentes</small>
+            </div>
+            <h4 class="precent-evo text-cyan">+18%</h4>
+          </div>
+        </div>
+        <div class="order">
+          <div class="order-icon">
+            <span class="material-icons-sharp">
+              shopping_cart
+            </span>
+          </div>
+          <div class="order-details">
+            <div class="info">
+              <h3>COMMMANDE DIRECT</h3>
+              <small>48h precedentes</small>
+            </div>
+            <h4 class="precent-evo text-fuscha">+18%</h4>
+          </div>
+        </div>
+        <div class="order">
+          <div class="order-icon">
+            <span class="material-icons-sharp">
+              shopping_cart
+            </span>
+          </div>
+          <div class="order-details">
+            <div class="info">
+              <h3>COMMMANDE DIRECT</h3>
+              <small>48h precedentes</small>
+            </div>
+            <h4 class="precent-evo text-yellow">+18%</h4>
+          </div>
+        </div>
+        <button class="new-product">
+          <span class="material-icons-sharp">
+            add
+          </span> <h3>new product</h3>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/script.js" type="module"></script>
 </body>
+
 </html>
